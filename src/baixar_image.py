@@ -6,10 +6,8 @@ def download_frame(FRAME) -> str:
     
     url = f'https://raw.githubusercontent.com/{data.REPO_OWNER}/{data.REPO_FRAMES_NAME}/{data.GITHUB_FRAMES_BRANCH}/{data.PASTA_FRAMES}/frame_{FRAME}.jpg'
     
-    headers = {'Authorization': f'Bearer {data.GIT_PAT}'}
-    
     try:
-        response = httpx.get(url, headers=headers)
+        response = httpx.get(url)
         if response.status_code == 404:
             return f'{data.MESSAGE_FRAME_NOT_FOUND}'
         

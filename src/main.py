@@ -1,4 +1,4 @@
-from check_tokens import check_variaveis
+from get_id import get_id
 from time import time, sleep
 from os import environ
 from comments import get_comments
@@ -25,7 +25,7 @@ def run_script():
         
 
 def main():
-    check_variaveis()
+    get_id()
     
     start: float = time()
     while (time() - start) < (180 * 60):  # 3 hours

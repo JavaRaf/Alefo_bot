@@ -27,7 +27,5 @@ class data:
     max = 6 # padrão 6, maximo recomendado 8. Essa opção controla a quantidade de posts que o bot vai olhar
     #--------------------------------------------------------------------------------------------------------------------------------
 
-    # variaveis de ambiente, nao é preciso mexer aqui
-    GIT_PAT: str = os.environ.get('GIT_PAT')  
     REPO_OWNER: str = os.environ.get('REPO_OWNER')  
     FB_TOKEN: str = os.environ.get('FB_TOKEN')

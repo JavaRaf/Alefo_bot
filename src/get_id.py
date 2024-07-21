@@ -29,7 +29,3 @@ def get_id():
     if retries == max_retries:
         print("Não foi possivel obeter o id da sua pagina, check seu FB_TOKEN")
 
-def check_variaveis():
-    get_id()
-    print('GIT_PAT OK') if environ.get('GIT_PAT') else print('Não foi possivel encontrar seu GIT_PAT, check a sintaxe da sua secreat')
-    
