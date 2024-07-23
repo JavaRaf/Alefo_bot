@@ -42,8 +42,10 @@ def get_comments():
               
     except httpx.RequestError as exc:
         print(f"HTTP error occurred: {exc}")
+        return ids, comments
     except Exception as exc:
         print(f"An error occurred: {exc}")
+        return ids, comments
                 
     data.init = 0
     return ids, comments
